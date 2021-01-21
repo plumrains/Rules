@@ -37,6 +37,7 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation url reject-200
 ^https?:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner url reject-200
 ^https?:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation url reject-200
+
 # 去除动态中的话题
 ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr url reject-dict
 # 去除动态中的最常访问
@@ -119,6 +120,9 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/a\.apicloud\.com\/start_page\/ url reject-200
 
 # B
+# 解锁B站大会员 
+https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best/playurl 
+https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best/season 
 # > 百度
 # >> 百度网盘
 ^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx url reject-200
@@ -135,9 +139,7 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/.+?\/(?>mixer|track2)\? url reject-200
 ^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do url reject-200
 ^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show url reject-200
-# > 哔哩哔哩
-^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ url reject-200
-^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-200 
+
 # > 抱抱
 ^https?+:\/\/www\.myhug\.cn\/ad\/ url reject-200
 # > 百词斩
