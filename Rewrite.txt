@@ -63,6 +63,9 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 # url-rewrite
 # Redirect Google Search Service
 ^http:\/\/www\.google\.cn url 302 https://www.google.com
+# 解锁B站大会员 
+^https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best/playurl 
+^https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best/season
 
 
 # script
@@ -223,11 +226,7 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 
 # G
 # > Google
-# >> Youtube
-# ^https?+:\/\/.+?\.googlevideo\.com\/.+?(?>&oad|ctier) url reject-200
-# ^https?+:\/\/\w+?\.youtube\.com\/api\/.+?ad url reject-200
-# ^https?+:\/\/\w+?\.youtube\.com\/p(?>agead|tracking) url reject-200
-# ^https?+:\/\/youtubei\.googleapis\.com\/youtubei\/.+?(?>ad|log)_ url reject-200
+
 # > Gofun
 ^https?+:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json url reject-200
 # > 国泰君安
