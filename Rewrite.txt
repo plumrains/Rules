@@ -119,10 +119,7 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 # > APICloud
 ^https?+:\/\/a\.apicloud\.com\/start_page\/ url reject-200
 
-# B
-# 解锁B站大会员 
-https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best/playurl 
-https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best/season 
+
 # > 百度
 # >> 百度网盘
 ^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx url reject-200
