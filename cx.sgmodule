@@ -1,10 +1,10 @@
 
 [Script]
 # 财新解锁
-财新解锁.js = type=http-response,pattern=^https:\/\/mappsv5\.caixin\.com\/articlev.* ,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/inkmume/Rules/master/myscript/caixin.js
-财新解锁.js = type=http-response,pattern=^https:\/\/mappsv5\.caixin\.com\/audioV1.* ,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/inkmume/Rules/master/myscript/caixin.js
-财新解锁.js = type=http-response,pattern=^https:\/\/course\.caixin\.com\/expert\.course\/course\/reserveapi.* ,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/inkmume/Rules/master/caixin.js
-财新解锁.js = type=http-response,pattern=^https:\/\/gateway\.caixin\.com\/api\/ucenter\/appapi\/v1\/userinfo ,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/inkmume/Rules/master/caixin.js
+财新解锁.js = type=http-response,pattern=^https:\/\/mappsv5\.caixin\.com\/articlev.* ,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/myscript/caixin.js
+财新解锁.js = type=http-response,pattern=^https:\/\/mappsv5\.caixin\.com\/audioV1.* ,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/myscript/caixin.js
+财新解锁.js = type=http-response,pattern=^https:\/\/course\.caixin\.com\/expert\.course\/course\/reserveapi.* ,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/myscript/caixin.js
+财新解锁.js = type=http-response,pattern=^https:\/\/gateway\.caixin\.com\/api\/ucenter\/appapi\/v1\/userinfo ,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/myscript/caixin.js
 
 [MITM]
 hostname = *.caixin.com
